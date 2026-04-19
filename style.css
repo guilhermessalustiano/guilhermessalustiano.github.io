@@ -1,0 +1,110 @@
+body {
+    background-color: #0F0F0F;
+    color: #ffffff;
+    margin: 0;
+}
+
+.foto-perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    margin-left: 16px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    background-color: #FF6A00;
+    padding: 2px;
+}
+
+.container-header h1 {
+    margin: 0;
+
+}
+
+.container-header nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    padding-right: 10%;
+}
+
+#hero {
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),
+        url("images/setup.jpg") no-repeat center/cover fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tecnologias {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#tecnologias td {
+    text-align: center;
+}
+
+#tecnologias img {
+    object-fit: contain;
+}
+
+#footer {
+    background: #FF6A00;
+    color: #fff;
+    padding: 40px 20px 20px;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    gap: 10px;
+    padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* cada coluna */
+.container-footer > div {
+    flex: 1;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-footer a {
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #fff;
+}
