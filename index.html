@@ -14,7 +14,7 @@
    
     <header>
         <div class="container-header">
-            <img src="images/foto_perfil.jpg" alt="foto de perfil" class="foto-perfil">
+            <img src="images/foto_perfil.jpeg" alt="foto de perfil" class="foto-perfil">
             <nav>
                 <a href="#sobre">Sobre</a>
                 <a href="#portfolio">Portfólio</a>
@@ -33,7 +33,11 @@
         </section>
 
         <section id="sobre">
+
+            <!-----ver se vai usar details + summary----->
+
             <h2>Sobre</h2>
+            <br>
             <h3>Mim</h3>
             <p>Eu sou Guilherme Salustiano. Sou paulista, tenho 21 anos e sou apaixonado pelo mundo da tecnologia. Gosto de futebol, torcedor do Corinthians, assim como basquete, que pratiquei durante um tempo.  </p>
             <h3>Formações</h3>
@@ -50,22 +54,18 @@
             <h2>Portfólio</h2>
             <article>
                 <h3>Tecnologias</h3>
-                <table id="tecnologias">
-                    <tr>
-                        <td><img src="images/tecnologias/html.png" alt="html"></td>
-                        <td><img src="images/tecnologias/css3.png" alt="css"></td>
-                        <td><img src="images/tecnologias/javascript.png" alt="javascript"></td>
-                        <td><img src="images/tecnologias/php.png" alt="php"></td>
-                        <td><img src="images/tecnologias/jquery.png" alt="jquery"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/tecnologias/bootstrap.png" alt="bootstrap"></td>
-                        <td><img src="images/tecnologias/mysql.png" alt="mysql"></td>
-                        <td><img src="images/tecnologias/nginx.png" alt="nginx"></td>
-                        <td><img src="images/tecnologias/linux.png" alt="linux"></td>
-                        <td><img src="images/tecnologias/python.png" alt="python"></td>
-                    </tr>
-                </table>
+                <div id="tecnologias">
+                    <div class="tech" id="tech-html"><img src="images/tecnologias/html.png" alt="html"></div>
+                    <div class="tech" id="tech-css"><img src="images/tecnologias/css3.png" alt="css"></div>
+                    <div class="tech" id="tech-javascript"><img src="images/tecnologias/javascript.png" alt="javascript"></div>
+                    <div class="tech" id="tech-php"><img src="images/tecnologias/php.png" alt="php"></div>
+                    <div class="tech" id="tech-jquery"><img src="images/tecnologias/jquery.png" alt="jquery"></div>
+                    <div class="tech" id="tech-bootstrap"><img src="images/tecnologias/bootstrap.png" alt="bootstrap"></div>
+                    <div class="tech" id="tech-mysql"><img src="images/tecnologias/mysql.png" alt="mysql"></div>
+                    <div class="tech" id="tech-nginx"><img src="images/tecnologias/nginx.png" alt="nginx"></div>
+                    <div class="tech" id="tech-linux"><img src="images/tecnologias/linux.png" alt="linux"></div>
+                    <div class="tech" id="tech-python"><img src="images/tecnologias/python.png" alt="python"></div>
+                </div>
             </article>
             
             <article>
@@ -102,10 +102,17 @@
         </div>
     </footer>
 
-    <!----includes arquivos modais----->
-    
-
     <!----includes cdn-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
+
+    
+    <!----includes arquivos modais----->
+    <script src="funcoes.js"></script>
+    <script src="modais_tecnologias/modal_html.js"></script>
+
+    s<div id="modais-container"></div>
+
+
 </body>
 </html>
