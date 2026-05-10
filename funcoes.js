@@ -4,7 +4,7 @@ let modalCarregado = false;
 async function carregarModal() {
     if (modalCarregado) return;
 
-    const response = await fetch('modais_tecnologias/modal_html.html');
+    const response = await fetch('modais.html');
     const html = await response.text();
 
     document.getElementById('modais-container').innerHTML = html;
@@ -15,11 +15,18 @@ async function carregarModal() {
 
 // Eventos
 $(document).ready(function() {
-    $(document).on('click', '#tech-html', async function(){
+    $(document).on('click', '.tech', async function(){
         await carregarModal();
 
-        const modal_html = new bootstrap.Modal(document.getElementById('modal_html'));
-        modal_html.show();
+        // Pega o id do modal
+        const modalId = $(this).data('modal');
+
+        // Abre o modal correspondente
+        const modal = new bootstrap.Modal(
+            document.getElementById(modalId)
+        );
+
+        modal.show();
     });
 });
 

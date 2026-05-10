@@ -20,6 +20,20 @@ nav {
 nav a {
     color: #2A2A2A;
     text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: 
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+nav a:hover {
+    background-color: rgba(0, 168, 232, 0.15);;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 15);
 }
 
 .container-header {
